@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>mochiスケジュール</title>
+</head>
+<script>
+    function OnButtonClick() {
+        t_master = document.getElementById("t_master").value;
+        document.getElementById("t1").value = t_master;
+        document.getElementById("t2").value = t_master;
+        document.getElementById("t3").value = t_master;
+        document.getElementById("t4").value = t_master;
+    }
+</script>
+
+<body>
+    <h1 class="title">零式のスケジュール管理をしてつよつよになろう！</h1>
+
+    <input type="time" name="time_master" id="t_master" value="20:00">
+    <input type="button" value="一括変更" onclick="OnButtonClick();" /><br />
+    <br />
+
+    <table border cellspacing="1" cellpadding="5">
+        <tr align="center">
+            <td>曜日</td>
+            <td>ログイン～ログアウト</td>
+        </tr>
+        <tr align="center">
+            <td>火</td>
+            <td>
+                <input type="time" id="t1" value="20:00">～
+                <input type="time" id="t2" value="20:00">
+            </td>
+        </tr>
+        <tr align="center">
+            <td>水</td>
+            <td>
+                <input type="time" id="t3" value="20:00">～
+                <input type="time" id="t4" value="20:00">
+            </td>
+        </tr>
+        <tr align="center">
+            <td>木</td>
+            <td>
+                <input type="time" id="t5" value="20:00">～
+                <input type="time" id="t6" value="20:00">
+            </td>
+        </tr>
+
+    </table>
+
+
+</body>
+
+</html>
